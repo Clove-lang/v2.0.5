@@ -1,0 +1,36 @@
+{
+  "name": "clove-lang",
+  "version": "2.0.5",
+  "description": "A class-oriented programming-language",
+  "main": "build/main/run.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.1.18",
+    "readline-sync": "^1.2.22"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "build": "babel src --source-maps --out-dir build",
+    "repl": "node build/main/run.js",
+    "test": "mocha --recursive build/test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clove-lang/clove.git"
+  },
+  "keywords": [
+    "clove",
+    "parser",
+    "tokenizer",
+    "type-checking",
+    "interpreter"
+  ],
+  "author": "Timo Sarkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clove-lang/clove/issues"
+  },
+  "homepage": "https://clove-lang.github.io"
+}
